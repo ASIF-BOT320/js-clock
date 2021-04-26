@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.MAIN {
+    background: #325288;
+    height: 100vh;
+    padding-top: 3%;
+}
+
+.clock {
+    height: 30rem;
+    width: 30rem;
+    margin: 200px auto;
+    padding: 2rem;
+    position: relative;
+    border: 20px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 2);
+}
+
+.clock-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-3PX);
+}
+
+.hand {
+    height: 6px;
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform-origin: 100%;
+    transform: rotate(90DEG);
+    transition: all 0.04s ease;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
